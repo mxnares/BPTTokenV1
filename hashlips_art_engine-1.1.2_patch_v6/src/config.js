@@ -9,6 +9,7 @@ const namePrefix = "BPT Collection";
 const description = "The first wave of Berkeley Pharma Tech's NFT collection";
 const baseUri = "ipfs://NewUriToReplace";
 
+// Royalty Fee. Be sure to change this address
 const solanaMetadata = {
   symbol: "YC",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
@@ -24,7 +25,7 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   { // change growEditionSizeTo to generate any amount
-    growEditionSizeTo: 10,
+    growEditionSizeTo: 30,
     layersOrder: [
       { name: "Background" },
       { name: "Tree" },
